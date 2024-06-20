@@ -1,0 +1,97 @@
+/* 清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 整个网页的背景图片 */
+body {
+    background-color: lightblue;
+}
+
+/* header */
+header {
+    margin-top: 10px;
+    /* background-color:rgb(53,100,248); */
+    height:70px;
+}
+
+header>img {
+    float: left;
+    margin-left: 88px;
+}
+
+/* 清除a标签默认样式 */
+a {
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+}
+/* 导航条 */
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(53,100,248);
+}
+
+nav ul {
+    margin-left: 300px;
+}
+
+nav ul li {
+    height: 70px;
+    padding: 0 15px;
+    list-style: none;
+    float: left;
+}
+
+nav ul li a {
+    line-height: 70px;
+}
+
+nav a:hover {
+    color: #333;
+}
+/* 表单 */
+form {
+	display: table;
+	padding: 10px;
+	border: thin dotted #7e7e7e;
+	background-color:skyblue;
+    margin-left:auto;
+    margin-right:auto;
+    width:1000px;
+}
+
+form textarea {
+	width: 500px;
+	height: 200px;
+}
+/* 表格的行 */
+div.tableRow {
+	display: table-row;
+}
+div.tableRow p {
+	display: table-cell;
+	vertical-align: top;
+	padding: 3px;
+}
+div.tableRow p:first-child {
+    /* 每行第一个单元格右对齐 */
+	text-align: right;
+}
+/* 页脚区 */
+footer {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    clear: both;
+    text-align: center;
+    color: rgb(239, 239, 239);
+    font-size: 18px;
+    background-color: dodgerblue;
+}
+
+footer>.down {
+    padding: 20px;
+    line-height: 30px;
+}

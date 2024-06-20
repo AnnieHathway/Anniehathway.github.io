@@ -1,0 +1,183 @@
+/* 清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* body */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    line-height:1.6em;
+    background-color: lightblue;
+}
+
+/* header */
+header {
+    margin-top: 10px;
+    height:70px;
+}
+
+header>img {
+    float: left;
+    margin-left: 88px;
+}
+
+/* 清除a标签默认样式 */
+a {
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+}
+/* 导航条 */
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(53,100,248);
+}
+
+nav ul {
+    margin-left: 300px;
+}
+
+nav ul li {
+    height: 70px;
+    padding: 0 15px;
+    list-style: none;
+    float: left;
+}
+
+nav ul li a {
+    line-height: 70px;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+/* 轮播图设置 */
+.banner {
+    width: 85%;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+#pic>li {
+    display: none;
+}
+
+#pic>li img {
+    width: auto;
+    height: 300px;
+}
+
+#pic>li.now {
+    display: block;
+}
+
+#picbtn {
+    width: auto;
+    height: 16px;
+    position: relative;
+    left: 480px;
+    bottom: 30px;
+}
+
+#picbtn>li {
+    list-style: none;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-color: #FFE4C4;
+    border-radius: 50%;
+    line-height: 16px;
+    margin-right: 6px;
+}
+
+#picbtn>li.on {
+    background: #18ACCA;
+    color: #fff;
+}
+
+
+/* container */
+.container {
+    width: 98%;
+    height: 500px;
+    background-color: rgb(4, 4, 4);
+    margin: 20px auto;
+}
+
+/* 上面盒子 */
+.continer .top1 {
+    width: 100%;
+    height: 30px;
+    background-color:dodgerblue;
+    color: rgb(239, 239, 239);
+    font-size: 18px;
+    text-align: center;
+}
+
+/* 中间盒子 */
+.middle {
+    height: 400px;
+    /* 弹性布局 */
+    display: flex;
+    /* 采用两端对齐方式 */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+
+}
+
+.middle h2 {
+    margin-left: 45px;
+    margin-bottom: 12px;
+}
+
+.middle p {
+    color: rgb(80, 77, 77);
+    margin-left: 45px;
+    line-height: 3;
+}
+
+.middle img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* 底部盒子 */
+.bottom {
+    height: 200px;
+    /* 弹性布局 */
+    display: flex;
+    /* 采用两端对齐方式 */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.bottom img {
+    width: calc((100% / 3) - 20px);
+    height: 200px;
+}
+/* 页脚区 */
+footer {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    clear: both;
+    text-align: center;
+    color: rgb(239, 239, 239);
+    font-size: 18px;
+    background-color: dodgerblue;
+}
+
+footer>.down {
+    padding: 20px;
+    line-height: 30px;
+}

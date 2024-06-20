@@ -1,0 +1,109 @@
+/* 清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 整个网页的背景图片 */
+body {
+    background-color: lightblue;
+}
+
+/* header */
+header {
+    margin-top: 10px;
+    /* background-color:rgb(53,100,248); */
+    height:70px;
+}
+
+header>img {
+    float: left;
+    margin-left: 88px;
+}
+
+/* 清除a标签默认样式 */
+a {
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+}
+/* 导航条 */
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(53,100,248);
+}
+
+nav ul {
+    margin-left: 300px;
+}
+
+nav ul li {
+    height: 70px;
+    padding: 0 15px;
+    list-style: none;
+    float: left;
+}
+
+nav ul li a {
+    line-height: 70px;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+.con{
+    width: 100%;
+    height: 30px;
+    background-color:dodgerblue;
+    color: rgb(239, 239, 239);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+}
+/* container */
+.container {
+    width: 90%;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+}
+  
+.character {
+    display: inline-block;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    border: 10px solid #333333;
+}
+  
+.character img {
+    width: 300px;
+    height: 300px;
+    /* 图片保持原有尺寸比例，高度铺满容器，宽度等比缩放 */
+    object-fit: cover;
+  
+}
+  
+.character h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: #333333;
+    color: #fff;
+    font-size: 24px;
+}
+/* 页脚区 */
+footer {
+    width: 100%;
+    height: 30px;
+    background-color:dodgerblue;
+    color: rgb(239, 239, 239);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+}
+footer>.down {
+    padding: 20px;
+    line-height: 30px;
+}
