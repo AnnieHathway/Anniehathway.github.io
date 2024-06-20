@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我</title>
+    <link rel="stylesheet" href="../css/联系我.css">
+</head>
+<body>
+    <!-- 页眉区：包含1个logo图片和1个导航条 -->
+    <header>
+        <!-- logo -->
+        <img src="../images/logo3.jpg" height="70px">
+        <!-- 导航条 -->
+        <nav>
+            <ul>
+                <li><a href="./index.html">网站首页</a></li>
+                <li><a href="./个人介绍.html">个人介绍</li>
+                <li><a href="./兴趣爱好.html">兴趣爱好</a></li>
+                <li><a href="./精选相册.html">精选相册</a></li>
+                <li><a href="./联系我.html">联系我</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 提示语 -->
+    <p>如果想要和我交流和分享，可以填写下面的表格！</p>
+    <!-- 表单放在1个2行7列的表格中 -->
+    <!--提交后跳转到网站首页 -->
+    <form action="./index.html" method="post">
+	<div class="tableRow">
+		<p> 姓名: </p>
+		<p> <input type="text" name="name" value=""> </p>
+	</div>
+	<div class="tableRow">
+		<p> 电子邮箱: </p>
+		<p> <input type="text" name="email" value=""> </p>
+	</div>
+    <!-- 单选按钮 -->
+	<div class="tableRow">
+		<p> 性别: </p>
+		<p>
+            <input type="radio" name="sex" value="male"> 男<br>
+            <input type="radio" name="sex" value="female"> 女
+		</p>
+	</div>
+	<div class="tableRow">
+		<p> 国籍: </p>
+		<p> <input type="text" name="nation" value="" > </p>
+	</div>
+	<div class="tableRow">
+		<p> 出生日期: </p>
+		<p> <input type="date" name="date"> </p>
+	</div>
+    <!-- 复选框 -->
+    <div class="tableRow">
+		<p> 兴趣爱好: </p>
+		<p>
+            <input type="checkbox" name="interests" value="music"> 音乐<br>
+            <input type="checkbox" name="interests" value="sports">运动<br>
+            <input type="checkbox" name="interests" value="read"> 阅读<br>
+            <input type="checkbox" name="interests" value="travel">旅游<br>
+            <input type="checkbox" name="interests" value="food">美食<br>
+		</p>
+	</div>
+	<div class="tableRow">
+		<p> 你有什么想说的吗？: </p>
+		<p>
+            <textarea name="comments"></textarea>
+		</p>
+	</div>
+    <!--提交后跳转到网站首页 -->
+	<div class="tableRow">
+		<p></p>
+		<p> <input type="submit" value="submit Now"> </p>
+	</div>
+    </form>
+    <!-- 页脚区：页脚区放了1个盒子，这个盒子摆放了1个段落 -->
+    <footer>
+        <div class="down">
+            <p>自由之风永远吹拂</p>
+        </div>
+      </footer>
+</body>
+</html>
